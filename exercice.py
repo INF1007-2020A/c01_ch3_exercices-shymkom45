@@ -19,7 +19,7 @@ def to_degrees(angle_rads: float) -> tuple:
     degrees = math.degrees(angle_rads)
     minutes = (degrees % 1) * 60
     seconds = (minutes % 1) * 60
-    return degrees - minutes,
+    return degrees // 1,
 
 
 def to_celsius(temperature: float) -> float:
